@@ -395,11 +395,16 @@ section>div.gallery {
 	position: absolute;
 	top: 0px; 
 	left: 0px;
-	display: none
+	display: block;
+    	opacity: 0;
 }
 
-.people .img_outer:hover .layer2 {
-	display: block;
+.people .img_outer:hover > div {
+    opacity: 0.85;
+}
+
+.people .img_outer:hover > .layer2 {
+    transition: all 0.5s linear;
 }
 
 .hidden {
